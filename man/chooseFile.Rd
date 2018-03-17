@@ -7,13 +7,13 @@
 chooseFile(...)
 }
 \arguments{
-\item{...}{Any arguments available for read.csv() function; file will be automatically chosen once you pick up your file using the file chooser dialog box.}
+\item{...}{Any arguments available for read.csv(), read.table(), readxl::read_excel(), foreign::read.spss() functions; file will be automatically chosen once you pick up your file using the file chooser dialog box.}
 }
 \value{
 A character value of the file path will be returned.
 }
 \description{
-You can alternatively use this function for choosing CSV file in an interactive GUI mode A file choose dialog box will be prompted.
+You can alternatively use this function for choosing *.csv, *.txt, *.xlsx, *.sav (SPSS) files in an interactive GUI mode A file choose dialog box will be prompted.
 }
 \details{
 chooseFile
@@ -22,13 +22,11 @@ chooseFile
 See example below.
 }
 \examples{
-```{r, echo=TRUE}
 data <- chooseFile(header=T)
 str(data)
 # You can  drop off your file using the file picker dialog box.
-```
 }
 \author{
-JooYoung Seo
+JooYoung Seo (jooyoung@psu.edu)
 }
 \keyword{chooseFile}
